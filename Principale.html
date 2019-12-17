@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            iframe {
+                border: double 3px red;
+                display: block;
+            }
+            img.imgOpaca {
+                max-height: 400px;
+                max-width: 500px;
+                opacity: .2;
+            }
+            img.imgOpaca:hover{
+                max-height: 800px;
+                max-width: 1000px;
+                opacity: 1;
+            }
+
+        </style>
+
+    </head>
+
+    <img class="imgOpaca" src="Immagini/Sfondo.jpg" alt="Immagine non visualizzabile" title="Immagine di sfondo"/>
+    <h1>Home page</h1>
+    <a href="Gennaio.html" target="finestraInterna">Gennaio</a>
+    <a href="Febbraio.html" target="finestraInterna">Febbraio</a>
+    <a href="Marzo.html" target="finestraInterna">Marzo</a>
+
+    <iframe src="Gennaio.html" style="border-color: darkorange; width: 1000px; height: 800px" >Questo browser non gestisce i Frame</iframe>
+</body>
+</html>
