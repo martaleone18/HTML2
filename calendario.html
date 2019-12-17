@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* I commenti dentro Style vanno tra diviso-asterisco e asterisco-diviso */
+            body /*Tutto il testo non specificato*/
+            {
+                color:black;
+                background-color: lightcyan;
+                font-size: 20px
+            }
+            table /*valori solo per la tabella*/
+            {
+                color: black;
+                background-color: white;
+                border: solid 2px chocolate;
+                border-spacing: 0px 0px;
+                border-collapse: collapse;
+            }
+            th /*valori per i tag th*/
+            {
+                font-size: 18px;
+            }
+            td /*valori per i tag td*/
+            {
+                font-size: 18px;
+                font-style: italic;  
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                vertical-align: middle;
+                border: solid 1px coral
+
+            }
+            .sabato
+            {
+                font-weight: bolder;
+            }
+            .festivo
+            {
+                font-size: 18px;
+                color: red;
+                font-weight: bolder;
+            }
+            .altromese
+            {
+                font-size: 18px;
+                color: lightgray;
+            }
+            .festivoaltromese
+            {
+                font-size: 18px;
+                color: lightcoral;
+                font-weight: bolder;
+            }
+            .oggi
+            {
+                background-color: yellow;
+                outline: dashed 3px red;
+            }
+            #natale
+            {
+                font-size: 24px;
+                text-shadow: 5px 10px 2px
+                    /*background-image: http://www.lastigiano.it/wp-content/uploads/2019/10/albero_di_natale_finto-1.jpg;*/
+            }
+            #nuovoanno
+            {
+                font-size: 24px;
+                color: lightcoral;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1><a href="index.html" target="_blank">HOME</a></h1>
+        <table>
+            <caption><b><u>Calendario</u></b></caption>
+            <tr>
+                <th colspan="7">Dicembre</th>
+            </tr>
+            <tr>
+                <th>Lun</th><th>Mar</th><th>Mer</th><th>Gio</th><th>Ven</th><th>Sab</th><th>Dom</th>
+            </tr>
+            <tr>
+                <td class="altromese">25</td><td class="altromese">26</td><td class="altromese">27</td><td class="altromese">28</td><td class="altromese">29</td><td class="altromese">30</td><td class="festivo">01</td>
+            </tr>
+            <tr>
+                <td>02</td><td>03</td><td>04</td><td>05</td><td class="oggi">06</td><td class="sabato">07</td><td class="festivo">08</td>
+            </tr>
+            <tr>
+                <td>09</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="sabato">14</td><td class="festivo">15</td>
+            </tr><tr>
+                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="sabato">21</td><td class="festivo">22</td>
+            </tr><tr>
+                <td>23</td><td>24</td><td class="festivo" id="natale">25</td><td class="festivo">26</td><td>27</td><td class="sabato">28</td><td class="festivo">29</td>
+            </tr>
+            <tr>
+                <td>30</td><td>31</td><td class="altromese festivo" id="nuovoanno">1</td><td class="altromese">2</td><td class="altromese">3</td><td class="altromese sabato">4</td><td class="festivoaltromese">5</td>
+            </tr>
+
+
+        </table>
+    </body>
+</html>

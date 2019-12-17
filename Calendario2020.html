@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* I commenti dentro Style vanno tra diviso-asterisco e asterisco-diviso */
+            body /*Tutto il testo non specificato*/
+            {
+                color:black;
+                background-color: lightcyan;
+                font-size: 20px
+            }
+            table /*valori solo per la tabella*/
+            {
+                color: black;
+                background-color: white;
+                border: solid 2px chocolate;
+                border-spacing: 0px 0px;
+                border-collapse: collapse;
+            }
+            th /*valori per i tag th*/
+            {
+                font-size: 22px;
+                border: solid 3px coral;
+            }
+            td /*valori per i tag td*/
+            {
+                font-size: 18px;
+                font-style: italic; 
+                font-weight: bolder;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                vertical-align: middle;
+                border: solid 1px coral
+
+            }
+            .sabato
+            {
+                font-weight: bolder;
+            }
+            .festivo
+            {
+                font-size: 18px;
+                color: red;
+                font-weight: bolder;
+            }
+            .am
+            {
+                font-size: 18px;
+                color: lightgray;
+                background-color: whitesmoke;
+            }
+            .festivoam
+            {
+                font-size: 18px;
+                color: lightcoral;
+                font-weight: bolder;
+            }
+            .oggi
+            {
+                background-color: yellow;
+                outline: dashed 3px red;
+            }
+            .giorni
+            {
+                background-color: bisque;
+                border: solid 2px coral;
+            }
+            #festivita
+            {
+                font-size: 24px;
+                text-shadow: 1px 5px 3px;
+            } 
+            #vuoto
+            {border: none;
+            }
+            #bci
+            {
+                background-color: wheat;   
+            }
+            #bcp
+            {
+                background-color: greenyellow;   
+            }
+            #bce
+            {
+                background-color: yellow;   
+            }
+            #bca
+            {
+                background-color: darkgoldenrod;   
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption><b><u>Calendario</u></b></caption>
+            <tr>
+                <th colspan="21">2020</th>
+            </tr>
+            <tr>
+                <th colspan="7">Gennaio</th>
+                <th colspan="7">Febbraio</th>
+                <th colspan="7">Marzo</th>
+            </tr>
+            <tr>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+            </tr>
+            <tr><td id="bci" class="am">30</td><td id="bci" class="am">31</td><td id="bci" id="festivita">01</td><td id="bci">02</td><td id="bci">03</td><td id="bci">04</td><td id="bci" class="festivo">05</td>	
+                <td id="bci" class="am">27</td><td id="bci" class="am">28</td><td id="bci" class="am">29</td><td id="bci" class="am">30</td><td id="bci" class="am">31</td><td id="bci">01</td>	<td id="bci" class="festivo">02</td>	
+                <td id="bci" class="am">24</td><td id="bci" class="am">25</td><td id="bci" class="am">26</td><td id="bci" class="am">27</td><td id="bci" class="am">28</td><td id="bci" class="am">29</td><td id="bci" class="festivo">	01	</td></tr>
+            <tr><td id="bci" id="festivita">06</td><td id="bci">07</td>	<td id="bci">08</td><td id="bci">09</td><td id="bci">10	</td><td id="bci">11</td><td id="bci" class="festivo">12</td>	
+                <td id="bci">03	</td><td id="bci">04</td><td id="bci">05</td><td id="bci">06</td><td id="bci">07</td><td id="bci">08</td><td id="bci" class="festivo">09</td>	
+                <td id="bci">02	</td><td id="bci">03</td><td id="bci">04</td><td id="bci">05</td><td id="bci">06</td><td id="bci">07</td><td id="bci" class="festivo">08</td></tr>
+            <tr><td id="bci">13	</td><td id="bci">14</td><td id="bci">15</td><td id="bci">16</td><td id="bci">17</td><td id="bci">18</td><td id="bci" class="festivo">19</td>	
+                <td id="bci">10	</td><td id="bci">11</td><td id="bci">12</td><td id="bci">13</td><td id="bci">14</td><td id="bci">15</td><td id="bci" class="festivo">16</td>	
+                <td id="bci">09	</td><td id="bci">10</td><td id="bci">11</td><td id="bci">12</td><td id="bci">13</td><td id="bci">14</td><td id="bci" class="festivo">15</td></tr>
+            <tr><td id="bci">20	</td><td id="bci">21</td><td id="bci">22</td><td id="bci">23</td><td id="bci">24</td><td id="bci">25</td><td id="bci" class="festivo">26</td>	
+                <td id="bci">17	</td><td id="bci">18</td><td id="bci">19</td><td id="bci">20</td><td id="bci">21</td><td id="bci">22</td><td id="bci" class="festivo">23</td>	
+                <td id="bci">16	</td><td id="bci">17</td><td id="bci">18</td><td id="bci">19</td><td id="bci">20</td><td id="bcp">21</td><td id="bcp" class="festivo">22</td></tr>
+            <tr><td id="bci">27	</td><td id="bci">28</td><td id="bci">29</td><td id="bci">30</td><td id="bci">31</td><td id="bci" class="am">01</td><td id="bci" class="festivoam">02</td>	
+                <td id="bci">24	</td><td id="bci">25</td><td id="bci">26</td><td id="bci">27</td><td id="bci">28</td><td id="bci">29</td><td id="bci" class="festivo">01</td>	
+                <td id="bcp">23	</td><td id="bcp">24</td><td id="bcp">25</td><td id="bcp">26</td><td id="bcp">27</td><td id="bcp">28</td><td id="bcp" class="festivo">29</td></tr>
+            <tr><th colspan="14" id="vuoto"></th>
+                <td id="bcp">30</td><td id="bcp">31</td><td id="bcn" class="am">01</td>	<td id="bcn" class="am">02</td>	<td id="bcn" class="am">03</td>	<td id="bcn" class="am">04</td>	<td id="bcn" class="festivoam">05</td>
+            </tr>
+            <tr>
+                <th colspan="7">Aprile</th>
+                <th colspan="7">Maggio</th>
+                <th colspan="7">Giugno</th>
+            </tr>
+            <tr>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+            </tr>
+            <tr><td id="bcn" class="am">	30	</td>	<td id="bcn" class="am">	31	</td>	<td id="bcp">	01	</td>	<td id="bcp">	02	</td>	<td id="bcp">	03	</td>	<td id="bcp">	04	</td>	<td id="bcp" class="festivo">	05	</td>	
+                <td id="bcp">	27	</td>	<td id="bcp">	28	</td>	<td id="bcp">	29	</td>	<td id="bcp">	30	</td>	<td id="bcp">	01	</td>	<td id="bcp">	02	</td>	<td id="bcp" class="festivo">	03	</td>	
+                <td id="bcp">	01	</td>	<td id="bcp">	02	</td>	<td id="bcp">	03	</td>	<td id="bcp">	04	</td>	<td id="bcp">	05	</td>	<td id="bcp">	06	</td>	<td id="bcp" class="festivo">	07	</td></tr>
+            <tr><td id="bcp">	06	</td>	<td id="bcp">	07	</td>	<td id="bcp">	08	</td>	<td id="bcp">	09	</td>	<td id="bcp">	10	</td>	<td id="bcp">	11	</td>	<td id="bcp" class="festivo">	12	</td>	
+                <td id="bcp">	04	</td>	<td id="bcp">	05	</td>	<td id="bcp">	06	</td>	<td id="bcp">	07	</td>	<td id="bcp">	08	</td>	<td id="bcp">	09	</td>	<td id="bcp" class="festivo">	10	</td>	
+                <td id="bcp">	08	</td>	<td id="bcp">	09	</td>	<td id="bcp">	10	</td>	<td id="bcp">	11	</td>	<td id="bcp">	12	</td>	<td id="bcp">	13	</td>	<td id="bcp" class="festivo">	14	</td></tr>
+            <tr><td id="bcp">	13	</td>	<td id="bcp">	14	</td>	<td id="bcp">	15	</td>	<td id="bcp">	16	</td>	<td id="bcp">	17	</td>	<td id="bcp">	18	</td>	<td id="bcp" class="festivo">	19	</td>	
+                <td id="bcp">	11	</td>	<td id="bcp">	12	</td>	<td id="bcp">	13	</td>	<td id="bcp">	14	</td>	<td id="bcp">	15	</td>	<td id="bcp">	16	</td>	<td id="bcp" class="festivo">	17	</td>	
+                <td id="bcp">	15	</td>	<td id="bcp">	16	</td>	<td id="bcp">	17	</td>	<td id="bcp">	18	</td>	<td id="bcp">	19	</td>	<td id="bcp">	20	</td>	<td id="bce" class="festivo">	21	</td></tr>
+            <tr><td id="bcp">	20	</td>	<td id="bcp">	21	</td>	<td id="bcp">	22	</td>	<td id="bcp">	23	</td>	<td id="bcp">	24	</td>	<td id="bcp">	25	</td>	<td id="bcp" class="festivo">	26	</td>	
+                <td id="bcp">	18	</td>	<td id="bcp">	19	</td>	<td id="bcp">	20	</td>	<td id="bcp">	21	</td>	<td id="bcp">	22	</td>	<td id="bcp">	23	</td>	<td id="bcp" class="festivo">	24	</td>	
+                <td id="bce">	22	</td>	<td id="bce">	23	</td>	<td id="bce">	24	</td>	<td id="bce">	25	</td>	<td id="bce">	26	</td>	<td id="bce">	27	</td>	<td id="bce" class="festivo">	28	</td></tr>
+            <tr><td id="bcp">	27	</td>	<td id="bcp">	28	</td>	<td id="bcp">	29	</td>	<td id="bcp">	30	</td>	<td id="bcp">	01	</td>	<td id="bcp">	02	</td>	<td id="bcp" class="festivo">	03	</td>	
+                <td id="bcp">	25	</td>	<td id="bcp">	26	</td>	<td id="bcp">	27	</td>	<td id="bcp">	28	</td>	<td id="bcp">	29	</td>	<td id="bcp">	30	</td>	<td id="bcp" class="festivo">	31	</td>	
+                <td id="bce">	29	</td>	<td id="bce">	30	</td>	<td id="bcn" class="am">	01	</td>	<td id="bcn" class="am">	02	</td>	<td id="bcn" class="am">	03	</td>	<td id="bcn" class="am">	04	</td>	<td id="bcn" class="festivoam">	05	</td>
+            </tr>
+            <tr>
+                <th colspan="7">Luglio</th>
+                <th colspan="7">Agosto</th>
+                <th colspan="7">Settembre</th>
+            </tr>
+            <tr>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+            </tr>
+            <tr><td id="bce">	29	</td>	<td id="bce">	30	</td>	<td id="bce">	01	</td>	<td id="bce">	02	</td>	<td id="bce">	03	</td>	<td id="bce">	04	</td>	<td id="bce" class="festivo">	05	</td>	
+                <td id="bce">	27	</td>	<td id="bce">	28	</td>	<td id="bce">	29	</td>	<td id="bce">	30	</td>	<td id="bce">	31	</td>	<td id="bce">	01	</td>	<td id="bce" class="festivo">	02	
+                </td><th colspan="7"></th></tr>
+            <tr><td id="bce">	06	</td>	<td id="bce">	07	</td>	<td id="bce">	08	</td>	<td id="bce">	09	</td>	<td id="bce">	10	</td>	<td id="bce">	11	</td>	<td id="bce" class="festivo">	12	</td>	
+                <td id="bce">	03	</td>	<td id="bce">	04	</td>	<td id="bce">	05	</td>	<td id="bce">	06	</td>	<td id="bce">	07	</td>	<td id="bce">	08	</td>	<td id="bce" class="festivo">	09	</td>	
+                <td id="bce">	31	</td>	<td id="bce">	01	</td>	<td id="bce">	02	</td>	<td id="bce">	03	</td>	<td id="bce">	04	</td>	<td id="bce">	05	</td>	<td id="bce" class="festivo">	06	</td></tr>
+            <tr><td id="bce">	13	</td>	<td id="bce">	14	</td>	<td id="bce">	15	</td>	<td id="bce">	16	</td>	<td id="bce">	17	</td>	<td id="bce">	18	</td>	<td id="bce" class="festivo">	19	</td>	
+                <td id="bce">	10	</td>	<td id="bce">	11	</td>	<td id="bce">	12	</td>	<td id="bce">	13	</td>	<td id="bce">	14	</td>	<td id="bce">	15	</td>	<td id="bce" class="festivo">	16	</td>	
+                <td id="bce">	07	</td>	<td id="bce">	08	</td>	<td id="bce">	09	</td>	<td id="bce">	10	</td>	<td id="bce">	11	</td>	<td id="bce">	12	</td>	<td id="bce" class="festivo">	13	</td></tr>
+            <tr><td id="bce">	20	</td>	<td id="bce">	21	</td>	<td id="bce">	22	</td>	<td id="bce">	23	</td>	<td id="bce">	24	</td>	<td id="bce">	25	</td>	<td id="bce" class="festivo">	26	</td>	
+                <td id="bce">	17	</td>	<td id="bce">	18	</td>	<td id="bce">	19	</td>	<td id="bce">	20	</td>	<td id="bce">	21	</td>	<td id="bce">	22	</td>	<td id="bce" class="festivo">	23	</td>	
+                <td id="bce">	14	</td>	<td id="bce">	15	</td>	<td id="bce">	16	</td>	<td id="bce">	17	</td>	<td id="bce">	18	</td>	<td id="bce">	19	</td>	<td id="bce" class="festivo">	20	</td></tr>
+            <tr><td id="bce">	27	</td>	<td id="bce">	28	</td>	<td id="bce">	29	</td>	<td id="bce">	30	</td>	<td id="bce">	31	</td>	<td id="bce">	01	</td>	<td id="bce" class="festivo">	02	</td>	
+                <td id="bce">	24	</td>	<td id="bce">	25	</td>	<td id="bce">	26	</td>	<td id="bce">	27	</td>	<td id="bce">	28	</td>	<td id="bce">	29	</td>	<td id="bce" class="festivo">	30	</td>	
+                <td id="bce">	21	</td>	<td id="bce">	22	</td>	<td id="bce">	23	</td>	<td id="bce">	24	</td>	<td id="bce">	25	</td>	<td id="bce">	26	</td>	<td id="bce" class="festivo">	27	</td></tr>
+            <tr><th colspan="7"></th>
+                <td id="bce">	31	</td>	<td id="bce">	01	</td>	<td id="bce">	02	</td>	<td id="bce">	03	</td>	<td id="bce">	04	</td>	<td id="bce">	05	</td>	<td id="bce" class="festivo">	06	</td>	
+                <td id="bce">	28	</td>	<td id="bce">	29	</td>	<td id="bce">	30	</td>	<td id="bce">	01	</td>	<td id="bce">	02	</td>	<td id="bce">	03	</td>	<td id="bce" class="festivo">	04	</td></tr>
+            <tr>
+                <th colspan="7">Ottobre</th>
+                <th colspan="7">Novembre</th>
+                <th colspan="7">Dicembre</th>
+            </tr>
+            <tr>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+                <td class="giorni">Lun</td><td class="giorni">Mar</td><td class="giorni">Mer</td><td class="giorni">Gio</td><td class="giorni">Ven</td><td class="giorni">Sab</td><td class="giorni">Dom</td>
+            </tr>
+            <tr><td id="bca">	28	</td>	<td id="bca">	29	</td>	<td id="bca">	30	</td>	<td id="bca">	01	</td>	<td id="bca">	02	</td>	<td id="bca">	03	</td>	<td id="bca" class="festivo">	04	</td>	
+                <td id="bca">	26	</td>	<td id="bca">	27	</td>	<td id="bca">	28	</td>	<td id="bca">	29	</td>	<td id="bca">	30	</td>	<td id="bca">	31	</td>	<td id="bca" class="festivo">	01	</td>
+                <th colspan="7"></th>
+            <tr><td id="bca">	05	</td>	<td id="bca">	06	</td>	<td id="bca">	07	</td>	<td id="bca">	08	</td>	<td id="bca">	09	</td>	<td id="bca">	10	</td>	<td id="bca" class="festivo">	11	</td>	
+                <td id="bca">	02	</td>	<td id="bca">	03	</td>	<td id="bca">	04	</td>	<td id="bca">	05	</td>	<td id="bca">	06	</td>	<td id="bca">	07	</td>	<td id="bca" class="festivo">	08	</td>	
+                <td id="bca">	30	</td>	<td id="bca">	01	</td>	<td id="bca">	02	</td>	<td id="bca">	03	</td>	<td id="bca">	04	</td>	<td id="bca">	05	</td>	<td id="bca" class="festivo">	06	</td></tr>
+            <tr><td id="bca">	12	</td>	<td id="bca">	13	</td>	<td id="bca">	14	</td>	<td id="bca">	15	</td>	<td id="bca">	16	</td>	<td id="bca">	17	</td>	<td id="bca" class="festivo">	18	</td>	
+                <td id="bca">	09	</td>	<td id="bca">	10	</td>	<td id="bca">	11	</td>	<td id="bca">	12	</td>	<td id="bca">	13	</td>	<td id="bca">	14	</td>	<td id="bca" class="festivo">	15	</td>	
+                <td id="bca">	07	</td>	<td id="bca">	08	</td>	<td id="bca">	09	</td>	<td id="bca">	10	</td>	<td id="bca">	11	</td>	<td id="bca">	12	</td>	<td id="bca" class="festivo">	13	</td></tr>
+            <tr><td id="bca">	19	</td>	<td id="bca">	20	</td>	<td id="bca">	21	</td>	<td id="bca">	22	</td>	<td id="bca">	23	</td>	<td id="bca">	24	</td>	<td id="bca" class="festivo">	25	</td>	
+                <td id="bca">	16	</td>	<td id="bca">	17	</td>	<td id="bca">	18	</td>	<td id="bca">	19	</td>	<td id="bca">	20	</td>	<td id="bca">	21	</td>	<td id="bca" class="festivo">	22	</td>	
+                <td id="bca">	14	</td>	<td id="bca">	15	</td>	<td id="bca">	16	</td>	<td id="bca">	17	</td>	<td id="bca">	18	</td>	<td id="bca">	19	</td>	<td id="bca" class="festivo">	20	</td></tr>
+            <tr><td id="bca">	26	</td>	<td id="bca">	27	</td>	<td id="bca">	28	</td>	<td id="bca">	29	</td>	<td id="bca">	30	</td>	<td id="bca">	31	</td>	<td id="bca" class="festivo">	01	</td>	
+                <td id="bca">	23	</td>	<td id="bca">	24	</td>	<td id="bca">	25	</td>	<td id="bca">	26	</td>	<td id="bca">	27	</td>	<td id="bca">	28	</td>	<td id="bca" class="festivo">	29	</td>	
+                <td id="bca">	21	</td>	<td id="bca">	22	</td>	<td id="bca">	23	</td>	<td id="bca">	24	</td>	<td id="bca">	25	</td>	<td id="bca">	26	</td>	<td id="bca" class="festivo">	27	</td></tr>
+            <tr><th colspan="7"></th>
+                <td id="bca">	30	</td>	<td id="bca">	01	</td>	<td id="bca">	02	</td>	<td id="bca">	03	</td>	<td id="bca">	04	</td>	<td id="bca">	05	</td>	<td id="bca" class="festivo">	06	</td>	
+                <td id="bca">	28	</td>	<td id="bca">	29	</td>	<td id="bca">	30	</td>	<td id="bca">	31	</td>	<td id="bca">	01	</td>	<td id="bca">	02	</td>	<td id="bca" class="festivo">	03	</td></tr>
+
+        </table>
+
+    </body>
+</html>
